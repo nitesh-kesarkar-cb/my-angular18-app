@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AppUpdateService } from './services/app-update.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'my-angular18-app';
+
+  constructor(private appUpdateService: AppUpdateService) {}
 }
